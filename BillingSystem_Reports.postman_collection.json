@@ -1,0 +1,92 @@
+{
+  "info": {
+    "_postman_id": "662aa1a0-1d0e-4dc5-81dd-8170cfde5037",
+    "name": "BillingSystem Reports",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": "Advanced queries for total paid, pending invoices, and transactions by platform."
+  },
+  "item": [
+    {
+      "name": "Total Paid by Client",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/reports/clients/total-paid",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "reports",
+            "clients",
+            "total-paid"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Pending Invoices (with latest transaction)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/reports/billings/pending",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "reports",
+            "billings",
+            "pending"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Transactions by Platform - Nequi",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/reports/transactions/by-platform/Nequi",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "reports",
+            "transactions",
+            "by-platform",
+            "Nequi"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Transactions by Platform - Daviplata",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/reports/transactions/by-platform/Daviplata",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "reports",
+            "transactions",
+            "by-platform",
+            "Daviplata"
+          ]
+        }
+      }
+    }
+  ]
+}
